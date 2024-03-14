@@ -11,14 +11,20 @@
 		58D9A1B02B89125C008C7036 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9A1AF2B89125C008C7036 /* ContentView.swift */; };
 		58D9A1B22B891260008C7036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D9A1B12B891260008C7036 /* Assets.xcassets */; };
 		58D9A1B52B891260008C7036 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D9A1B42B891260008C7036 /* Preview Assets.xcassets */; };
+		58D9A1BC2B8912BC008C7036 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9A1BB2B8912BC008C7036 /* File.swift */; };
+		58D9A1BE2B8C0CCC008C7036 /* File2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9A1BD2B8C0CCC008C7036 /* File2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5833C0AF2B96429300AC0007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5833C0B02B96453C00AC0007 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		58D9A1AA2B89125C008C7036 /* testfeb23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testfeb23.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D9A1AD2B89125C008C7036 /* testfeb23App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testfeb23App.swift; sourceTree = "<group>"; };
-		58D9A1AF2B89125C008C7036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		58D9A1AF2B89125C008C7036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		58D9A1B12B891260008C7036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D9A1B42B891260008C7036 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58D9A1BB2B8912BC008C7036 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		58D9A1BD2B8C0CCC008C7036 /* File2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,14 @@
 		58D9A1AC2B89125C008C7036 /* testfeb23 */ = {
 			isa = PBXGroup;
 			children = (
+				5833C0AF2B96429300AC0007 /* Info.plist */,
 				58D9A1AD2B89125C008C7036 /* testfeb23App.swift */,
 				58D9A1AF2B89125C008C7036 /* ContentView.swift */,
 				58D9A1B12B891260008C7036 /* Assets.xcassets */,
 				58D9A1B32B891260008C7036 /* Preview Content */,
+				58D9A1BB2B8912BC008C7036 /* File.swift */,
+				58D9A1BD2B8C0CCC008C7036 /* File2.swift */,
+				5833C0B02B96453C00AC0007 /* Package.swift */,
 			);
 			path = testfeb23;
 			sourceTree = "<group>";
@@ -83,6 +93,8 @@
 			dependencies = (
 			);
 			name = testfeb23;
+			packageProductDependencies = (
+			);
 			productName = testfeb23;
 			productReference = 58D9A1AA2B89125C008C7036 /* testfeb23.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +123,9 @@
 				Base,
 			);
 			mainGroup = 58D9A1A12B89125C008C7036;
+			packageReferences = (
+				5833C0AD2B96377700AC0007 /* XCRemoteSwiftPackageReference "implicit-curves" */,
+			);
 			productRefGroup = 58D9A1AB2B89125C008C7036 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D9A1BE2B8C0CCC008C7036 /* File2.swift in Sources */,
 				58D9A1B02B89125C008C7036 /* ContentView.swift in Sources */,
+				58D9A1BC2B8912BC008C7036 /* File.swift in Sources */,
 				58D9A1AE2B89125C008C7036 /* testfeb23App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +284,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"testfeb23/Preview Content\"";
+				DEVELOPMENT_TEAM = TMN6MFG35F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testfeb23/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,8 +314,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"testfeb23/Preview Content\"";
+				DEVELOPMENT_TEAM = TMN6MFG35F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testfeb23/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +358,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5833C0AD2B96377700AC0007 /* XCRemoteSwiftPackageReference "implicit-curves" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aheze/implicit-curves.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 58D9A1A22B89125C008C7036 /* Project object */;
 }
